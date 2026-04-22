@@ -10,7 +10,7 @@ body {
 
 :root {
   font-family: "Poppins", sans-serif;
-  --primary-color: rgb(229, 19, 61);
+  --primary-color: #2563eb; --secondary-color: #059669; --accent-color: #f8fafc;
 }
 
 /*-------------------------------NAVBAR COMPONENT------------------------------------*/
@@ -27,7 +27,7 @@ nav {
 nav > .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #d11313;
+  color: #1a1a1a;
 }
 
 nav > ul {
@@ -39,7 +39,7 @@ nav > ul {
 
 nav > .mainBtn {
   padding: 0.5rem 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -55,11 +55,11 @@ nav > .mainBtn {
   background: linear-gradient(
     to right,
     var(--primary-color) 0%,
-    var(--primary-color) 5%,
-    #f5ede6 5%,
-    #f5ede6 95%,
-    var(--primary-color) 95%,
-    var(--primary-color) 100%
+    var(--primary-color) 30%,
+    var(--accent-color) 30%,
+    var(--accent-color) 70%,
+    var(--secondary-color) 70%,
+    var(--secondary-color) 100%
   );
 }
 
@@ -84,7 +84,7 @@ nav > .mainBtn {
 }
 
 .hero-content h1 .highlight {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .hero-content h2 {
@@ -121,23 +121,23 @@ nav > .mainBtn {
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: #fff;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(229, 19, 61, 0.3);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   border: 2px solid var(--primary-color);
 }
 
 .btn-outline:hover {
-  background-color: rgba(229, 19, 61, 0.1);
+  background-color: rgba(37, 99, 235, 0.1);
 }
 
 .hero-right {
@@ -203,7 +203,7 @@ nav > .mainBtn {
 
 /*-------------------------------FOOD CARD COMPONENT------------------------------------*/
 .food-card {
-  background: #ffb6c1;
+  background: var(--accent-color);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -228,7 +228,7 @@ nav > .mainBtn {
 .food-card:hover {
   transform: translateY(-8px) rotate(1deg);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-  background-color: #ff69b4;
+  background-color: #e2e8f0;
 }
 
 .food-card-image {
@@ -277,7 +277,7 @@ nav > .mainBtn {
 .recipe-btn {
   width: 100%;
   padding: 0.8rem;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -287,20 +287,20 @@ nav > .mainBtn {
 }
 
 .recipe-btn:hover {
-  background-color: #d11313;
+  background-color: #047857;
   transform: scale(1.05);
   animation: pulse 0.6s infinite;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(209, 19, 19, 0.7);
+    box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(209, 19, 19, 0);
+    box-shadow: 0 0 0 10px rgba(5, 150, 105, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(209, 19, 19, 0);
+    box-shadow: 0 0 0 0 rgba(5, 150, 105, 0);
   }
 }
 
@@ -311,11 +311,11 @@ nav > .mainBtn {
     background: linear-gradient(
       to bottom,
       var(--primary-color) 0%,
-      var(--primary-color) 5%,
-      #f5ede6 5%,
-      #f5ede6 95%,
-      var(--primary-color) 95%,
-      var(--primary-color) 100%
+      var(--primary-color) 30%,
+      var(--accent-color) 30%,
+      var(--accent-color) 70%,
+      var(--secondary-color) 70%,
+      var(--secondary-color) 100%
     );
   }
 

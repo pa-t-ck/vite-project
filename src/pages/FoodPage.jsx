@@ -14,7 +14,7 @@ const FoodPage = () => {
       setIsLoading(true);
       try {
         // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        await new Promise((resolve) => setTimeout(resolve, 5000));
         setRecipes([
           {
             id: 1,
